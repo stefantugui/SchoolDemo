@@ -6,7 +6,7 @@
         {
             var testObject = new TestClass();
 
-            testObject.DoWork();
+            testObject.DoWork2();
         }
     }
 }

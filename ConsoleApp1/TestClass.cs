@@ -10,7 +10,7 @@
 
         public int NumberOfRepetitions = 2;
 
-        public void DoWork()
+        public void DoWork2()
         {
             char[] letters = { 'f', 'r', 'e', 'd', ' ', 's', 'm', 'i', 't', 'h' };
             string name = "";
