@@ -4,23 +4,29 @@
 
     public class TestClass
     {
-        public int numberOfRepetitions = 2;
+        private string _privateString = "";
 
-        public string StringProp { get; set; }
+        public static int StaticInt = 2;
 
-        public void doWork()
+        public int NumberOfRepetitions = 2;
+
+        public void DoWork()
         {
             char[] letters = { 'f', 'r', 'e', 'd', ' ', 's', 'm', 'i', 't', 'h' };
             string name = "";
             int[] a = new int[10];
-            for (var j = 0; j < numberOfRepetitions; j++)
+            for (var j = 0; j < NumberOfRepetitions; j++)
                 for (int i = 0; i < letters.Length; i++)
                 {
                     name += letters[i];
                     a[i] = i + 1;
-                    Console.WriteLine("Hello, " + name + "! Count to " + a[i]);
+                    NewMethod(name, a[i]);
                 }
-            Console.ReadKey();
+        }
+
+        private static void NewMethod(string name, int o)
+        {
+            Console.WriteLine("Hello, " + name + "! Count to " + o);
         }
     }
 }
